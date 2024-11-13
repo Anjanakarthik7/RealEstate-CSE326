@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+*{
+    font-family: 'Nunito',sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline:none;
+    border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    color:#424141;
+}
+html{
+    font-size: 92.5%;
+    overflow-x:hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top:112px;  
+}
+body{
+    background-color:black ;   
+}
+
+.btn{
+    margin-top:16px;
+    display:inline-block;
+    padding:13px 56px;
+    border-radius:8px;
+    font-size: 27px;
+    color:rgb(160, 154, 154);
+    background:transparent;
+    cursor:pointer;
+    text-align:center;
+}
+
+.btn:hover{
+    background:grey;
+    color:#fff;
+}
+header{
+    position: fixed;
+    top:0;
+    left:0; right:0;
+    z-index: 1000;
+    background:linear-gradient(120deg, rgb(116, 114, 114),rgb(29, 25, 25));
+    padding:24px 9%;
+    box-shadow: 8px 16px rgba(0,0,0,.1);
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .logo{
+    font-weight:bolder;
+    font-size:40px;
+    color:#333;
+}
+header .logo span{
+    color:black;
+}
+
+header .navbar a{
+    color:rgb(236, 225, 225);
+    font-size:32px;
+    padding:0 25px;
+}
+header .navbar a:hover{
+    color:bisque;
+}
+header .icons #menu-bars,
+header .icons a{
+    height:72px;
+    line-height:72px;
+    width:80px;
+    font-size: 32px;
+    margin-right: 8px;
+    border-radius: 8px;
+    color:darkred; 
+    text-align: center;
+}
+header .icon #menu-bars:hover,
+header .icons a:hover{
+    background-color: red;
+    color:white;
+}
+header .icons #menu-bars{
+    display: none;
+}
+.home{
+    min-height:100vh;
+    background:url(homebackground.jpg) no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.home form{
+    margin-top: 16px;
+    background:#ffffff1f;
+    border-radius:8px;
+    box-shadow: 8px 16px rgb(68, 66, 66);
+    border:1.6px solid  rgb(68, 66, 66);
+    width:70rem;
+    padding:32px;
+}
+.home form{
+    text-align: center;
+    color:rgb(0, 0, 0);
+    font-size:48px;
+}
+.home form .buttons-container{
+    gap:24px;
+}
+.home form .buttons-container .btn{
+    flex:1;
+}
+.home form .inputBox{
+    display:flex;
+    flex-wrap: wrap;
+    gap:24px;
+    margin-top: 32px;
+}
+.home form .inputBox input,
+.home form .inputBox select{
+    flex:1 1 25rem;
+    border:1.6px solid rgb(14, 13, 13);
+    font-size: 24px;
+    padding:16px;
+    text-transform:none;
+}
+.box{
+    font-size: large;
+}
+.heading{
+    text-align: center;
+    color:black;
+    font-size:4rem;
+    padding-top:6rem;
+    margin-bottom: 20px;
+}
+.heading span{
+    color:orangered;
+    border-radius:5rem;
+    padding:.2rem 1.5rem;
+}
+.agents .box-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    gap:1.5rem;
+    padding-bottom: 2rem;
+    font-size:25px;
+    margin-top:25px;
+}
+.agents .box-container .box{
+    text-align: center;
+    border: 2px solid ;
+    box-shadow: 1px 2px grey;
+    border-radius:.5rem;
+    padding:2rem;
+    position:relative;
+    width:26rem;
+    margin-bottom: 25px;
+    overflow:hidden;
+    flex:1;
+}
+.agents .box-container .box .fa-envelope{
+    position:absolute;
+    top:1.8rem;
+    left:2rem;
+    color:black;
+    font-size:2rem;
+}
+.agents .box-container .box .fa-envelope:hover{
+    color:grey;
+}
+.agents .box-container .box .fa-phone{
+    position:absolute;
+    top:1.8rem;
+    right:2rem;
+    color:black;
+    font-size:2rem;
+}
+.agents .box-container .box .fa-phone:hover{
+    color:grey;
+}
+.agents .box-container .box img{
+    border-radius: 50%;
+    object-fit: cover;
+    height:10rem;
+    width:10rem;
+    margin:1rem 0;
+}
+.agents .box-container .box h3{
+    font-size: 32px;
+    color:#333;
+}
+.agents .box-container .box span{
+    font-size: 30px;
+    color:orangered;
+}
+.agents .box-container .box .share a{
+    margin:0 .3rem;
+    height:4rem;
+    width:4rem;
+    line-height: 4rem;
+    color:#fff;
+    border-radius:5rem;
+    font-size: 32px;
+}
+.agents .box-container .box .share a:hover{
+    color:grey;
+}
+.contact .icons-container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:1.5rem;
+    padding-bottom: 2rem;
+    font-size:25px;
+    margin-top:25px;   
+}
+.contact .icons-container .icons{
+    flex: 1 1 25rem;
+    padding:32px;
+    border:.1rem solid rgb(240, 234, 234);
+    border-radius:8px;
+    box-shadow: 8px 16px ;
+    text-align: center;
+}
+.contact .icons-container .icons img{
+    height:96px;
+}
+.contact .icons-container .icons h3{
+    font-size: 40px;    
+}
+.contact .icons-container .icons a{
+    text-decoration: none;  
+}
+.contact .row{
+    border: 1.5px solid;
+    box-shadow: 8px 16px rgb(197, 175, 175);
+    border-radius:8px;
+    display:flex;
+    flex-wrap:wrap-reverse;
+    padding: 2px;
+}
+.contact .row form{
+    flex:1 1 30rem;
+    padding:8px 16px;
+}
+.contact .row .map{
+    flex:1 1 30rem;
+    width:100%;
+    padding:16px;
+    height:100%;
+}
+.contact .row form .inputBox{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+.contact .row form textarea,
+.contact .row form .inputBox input{
+    margin-top: 16px;
+    padding: 16px;
+    font-size: 27px;
+    color:black;
+    background: white;
+    border-radius:8px;
+    text-transform: none;
+    width:49%;
+}
+.contact .row form textarea{
+    width:100%;
+    height:20rem;
+}
+.footer .footer-container{
+    background: #fff;
+    border:.1rem solid;
+    border-radius:8px;
+    box-shadow: 8px 16px;
+    padding:32px;
+    display:flex;
+    flex-wrap:wrap;
+    margin-top:10px;
+}
+.footer .footer-container .box-container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:24px;
+}
+.footer .footer-container .box-container .box{
+    flex:1 1 25rem;
+}
+.footer .footer-container .box-container .box h3{
+    font-size: 40px;
+    color:black;
+    padding:80px 0;
+}
+.footer .footer-container .box-container .box a{
+    font-size: 32px;
+    color:black;
+    padding: 80px 0;   
+}
+.footer .footer-container .box-container .box a:hover{
+    color:orangered;
+    text-decoration: underline;
+}
+.footer .footer-container .credit{
+    margin-top: 32px;
+    padding:24px;
+    padding-top: 40px;
+    font-size:32px;
+    text-align: center;
+    color:black;
+    border-top: .1rem solid black;
+}
+.featured .box-container{
+    display:flex;
+    flex-wrap: wrap;
+    gap:32px;
+}
+.featured .box-container .box{
+    border:5px solid grey ;
+    box-shadow: 8px 16px;
+    border-radius: 8px;
+    overflow:hidden;
+    flex:1 1 30rem;
+}
+.featured .box-container .box .image-container{
+    overflow:hidden;
+    position:relative;
+    width:100%;
+    height: 25rem;
+}
+.featured .box-container .box .image-container img{
+    width:100%;
+    object-fit:cover;
+    transition: .2s linear;
+}
+.featured .box-container .box:hover .image-container img{
+    transform: scale(1.1);
+}
+.featured .box-container .box:hover .image-container .info{
+    position:absolute;
+    top:16px; left:0;
+    display:flex;
+}
+.featured .box-container .box:hover .image-container .info h3{
+    font-size:22px;
+    background:black;
+    color:#fff;
+    border-radius: 8px;
+    padding:5rem 1.5rem;
+    margin-left: 16px;
+    font-weight: 500;
+}
