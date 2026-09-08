@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account | RealEstate Luxury Living</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-body">
+    <header>
+        <a href="index.html" class="logo">
+            <i class="fas fa-city"></i>
+            <span class="brand-real">real</span><span class="brand-estate">Estate</span>
+        </a>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="properties.html">Properties</a>
+            <a href="services.html">Services</a>
+            <a href="agent.html">Agents</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+            <a href="index.html" class="btn btn-outline btn-sm"><i class="fas fa-arrow-left"></i> Back to Home</a>
+        </div>
+    </header>
+
+    <div class="auth-wrapper">
+        <div class="auth-card">
+            <div class="auth-header">
+                <div style="width: 60px; height: 60px; margin: 0 auto 16px; border-radius: 50%; background: rgba(245, 158, 11, 0.15); border: 1px solid var(--border-gold); display: flex; align-items: center; justify-content: center;">
+                    <i class="fas fa-user-plus" style="font-size: 1.5rem; color: var(--accent-gold);"></i>
+                </div>
+                <h2>Create Account</h2>
+                <p>Join RealEstate to save favorites, schedule tours, and connect with premier agents.</p>
+            </div>
+
+            <form class="auth-form" onsubmit="return sub(event)">
+                <div class="form-group">
+                    <label for="uid">Full Name / UserID</label>
+                    <input type="text" id="uid" class="form-control" placeholder="e.g. JohnDoe" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" class="form-control" placeholder="name@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mob">Mobile Number (10 Digits)</label>
+                    <input type="text" id="mob" class="form-control" placeholder="9876543210" maxlength="10" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="pass">Password (Min. 6 chars)</label>
+                    <div class="password-wrap">
+                        <input type="password" id="pass" class="form-control" placeholder="••••••••" required>
+                        <button type="button" class="password-toggle" onclick="togglePasswordVisibility('pass', this)">
+                            <i class="far fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="cnfm">Confirm Password</label>
+                    <div class="password-wrap">
+                        <input type="password" id="cnfm" class="form-control" placeholder="••••••••" required>
+                        <button type="button" class="password-toggle" onclick="togglePasswordVisibility('cnfm', this)">
+                            <i class="far fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-gold" style="width: 100%; margin-top: 10px; padding: 14px;">
+                    <i class="fas fa-user-check"></i> Sign Up
+                </button>
+
+                <div class="auth-footer">
+                    Already have an account? <a href="login2.html">Sign In</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+    <script>
+        function togglePasswordVisibility(fieldId, btn) {
+            const input = document.getElementById(fieldId);
+            const icon = btn.querySelector('i');
+            if (input.type === "password") {
+                input.type = "text";
+                icon.classList.remove("fa-eye");
+                icon.classList.add("fa-eye-slash");
+            } else {
+                input.type = "password";
+                icon.classList.remove("fa-eye-slash");
+                icon.classList.add("fa-eye");
+            }
+        }
+    </script>
+</body>
+</html>

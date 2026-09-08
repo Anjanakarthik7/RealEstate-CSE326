@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RealEstate | Premier Luxury Living & Investments</title>
+    <meta name="description" content="Discover bespoke luxury penthouses, waterfront villas, private islands, and investment properties with RealEstate.">
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header>
+        <a href="index.html" class="logo">
+            <i class="fas fa-city"></i>
+            <span class="brand-real">real</span><span class="brand-estate">Estate</span>
+        </a>
+
+        <nav class="navbar">
+            <a href="index.html" class="active">Home</a>
+            <a href="properties.html">Properties</a>
+            <a href="services.html">Services</a>
+            <a href="agent.html">Agents</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+            <a href="#" class="nav-icon-btn" id="fav-btn" title="Saved Properties">
+                <i class="fas fa-heart"></i>
+                <span class="badge-counter" id="fav-count">0</span>
+            </a>
+            <a href="login2.html" class="user-badge" id="user-account-btn">
+                <i class="fas fa-user"></i>
+                <span>Sign In</span>
+            </a>
+            <div id="menu-bars" class="fas fa-bars nav-icon-btn" title="Toggle Menu"></div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-pill">
+                <i class="fas fa-gem"></i> Premier Global Real Estate
+            </div>
+            <h1 class="hero-title">
+                Find Your Exceptional Sanctuary in <span class="highlight">Prime Locations</span>
+            </h1>
+            <p class="hero-desc">
+                Explore handpicked luxury penthouses, bespoke villas, private island estates, and high-yield properties curated by certified advisors.
+            </p>
+
+            <!-- Search Card -->
+            <div class="search-card">
+                <div class="search-tabs">
+                    <button type="button" class="tab-btn active" data-tab="all">All Properties</button>
+                    <button type="button" class="tab-btn" data-tab="sale">For Sale</button>
+                    <button type="button" class="tab-btn" data-tab="rent">For Rent</button>
+                </div>
+
+                <form id="heroSearchForm" class="search-grid">
+                    <div class="input-field">
+                        <label for="heroLocation"><i class="fas fa-map-marker-alt text-gold"></i> Location</label>
+                        <input type="text" id="heroCity" placeholder="City or Area (e.g. Jubilee Hills)">
+                    </div>
+
+                    <div class="input-field">
+                        <label for="heroPropType"><i class="fas fa-home text-primary"></i> Property Type</label>
+                        <select id="heroPropType">
+                            <option value="">All Types</option>
+                            <option value="apartment">Luxury Apartment</option>
+                            <option value="villa">Luxury Villa</option>
+                            <option value="island">Private Island</option>
+                            <option value="land">Agricultural Land</option>
+                        </select>
+                    </div>
+
+                    <div class="input-field">
+                        <label for="heroBhk"><i class="fas fa-bed text-gold"></i> Bedrooms</label>
+                        <select id="heroBhk">
+                            <option value="">Any Bedrooms</option>
+                            <option value="1">1 BHK</option>
+                            <option value="2">2 BHK</option>
+                            <option value="3">3 BHK</option>
+                            <option value="4">4+ BHK</option>
+                        </select>
+                    </div>
+
+                    <div class="input-field">
+                        <label for="heroBudget"><i class="fas fa-tag text-emerald"></i> Max Budget</label>
+                        <select id="heroBudget">
+                            <option value="">No Maximum</option>
+                            <option value="25lakhs">Rs. 25 Lakhs</option>
+                            <option value="1cr">Rs. 1 Crore</option>
+                            <option value="5cr">Rs. 5 Crores</option>
+                            <option value="50cr">Rs. 50 Crores</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-gold" style="height: 48px;">
+                        <i class="fas fa-search"></i> Search Properties
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Metrics Stats Banner -->
+    <div class="stats-bar">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-number">2,500+</div>
+                <div class="stat-label">Verified Listings</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">Rs. 1,850 Cr+</div>
+                <div class="stat-label">Properties Transacted</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">1,400+</div>
+                <div class="stat-label">Happy Homeowners</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">99.2%</div>
+                <div class="stat-label">Client Satisfaction</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured Properties Section -->
+    <section class="section-wrapper" id="featured">
+        <div class="section-header">
+            <span class="section-tag">Handpicked Residences</span>
+            <h2 class="section-title">Featured Luxury Properties</h2>
+            <p class="section-desc">
+                From high-rise panoramic apartments to secluded private islands, browse our exclusive portfolio.
+            </p>
+        </div>
+
+        <div class="filter-chips">
+            <button class="chip-btn active" data-filter="all">All Properties</button>
+            <button class="chip-btn" data-filter="sale">For Sale</button>
+            <button class="chip-btn" data-filter="rent">For Rent</button>
+            <button class="chip-btn" data-filter="apartment">Apartments</button>
+            <button class="chip-btn" data-filter="villa">Villas</button>
+            <button class="chip-btn" data-filter="island">Islands</button>
+            <button class="chip-btn" data-filter="land">Farmland</button>
+        </div>
+
+        <!-- Dynamic Properties Grid -->
+        <div class="properties-grid" id="properties-container"></div>
+
+        <div style="text-align: center; margin-top: 50px;">
+            <a href="properties.html" class="btn btn-outline" style="padding: 14px 34px;">
+                Explore All Portfolio Properties <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Core Services Section -->
+    <section class="section-wrapper" style="background: var(--bg-surface);" id="services">
+        <div class="section-header">
+            <span class="section-tag">What We Do</span>
+            <h2 class="section-title">End-to-End Real Estate Services</h2>
+            <p class="section-desc">
+                Comprehensive concierge solutions for buying, renting, selling, and managing luxury property portfolios.
+            </p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-img-wrap">
+                    <img src="buyinghouse.jpg" alt="Buying Property">
+                </div>
+                <div class="service-icon"><i class="fas fa-key"></i></div>
+                <h3 class="service-title">Buying Luxury Homes</h3>
+                <p class="service-text">
+                    Personalized property hunting with clear title verification, neighborhood evaluation, and best-in-class price negotiations.
+                </p>
+                <a href="services.html" class="btn btn-outline btn-sm">Explore Service</a>
+            </div>
+
+            <div class="service-card">
+                <div class="service-img-wrap">
+                    <img src="renthouse.jpg" alt="Renting Property">
+                </div>
+                <div class="service-icon"><i class="fas fa-building"></i></div>
+                <h3 class="service-title">Exclusive Leasing</h3>
+                <p class="service-text">
+                    Curated executive residences, short and long-term luxury leases, and complete tenant-landlord legal documentation.
+                </p>
+                <a href="services.html" class="btn btn-outline btn-sm">Explore Service</a>
+            </div>
+
+            <div class="service-card">
+                <div class="service-img-wrap">
+                    <img src="selling.jpg" alt="Selling Property">
+                </div>
+                <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+                <h3 class="service-title">Property Divestment</h3>
+                <p class="service-text">
+                    Strategic high-definition marketing, targeted high-net-worth investor reach, and swift, confidential deal closing.
+                </p>
+                <a href="services.html" class="btn btn-outline btn-sm">Explore Service</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Mortgage / EMI Calculator -->
+    <section class="section-wrapper" id="calculator">
+        <div class="section-header">
+            <span class="section-tag">Financial Planning</span>
+            <h2 class="section-title">Mortgage & EMI Calculator</h2>
+            <p class="section-desc">
+                Estimate your monthly repayment schedule and plan your luxury property investment with transparent accuracy.
+            </p>
+        </div>
+
+        <div class="calculator-card">
+            <div class="calc-grid">
+                <div class="calc-sliders">
+                    <div class="calc-group">
+                        <div class="calc-label-row">
+                            <span>Loan Amount</span>
+                            <span class="calc-val-badge" id="calcAmountBadge">Rs. 1.00 Cr</span>
+                        </div>
+                        <input type="range" id="calcAmount" min="1000000" max="100000000" step="500000" value="10000000">
+                    </div>
+
+                    <div class="calc-group">
+                        <div class="calc-label-row">
+                            <span>Interest Rate (% per year)</span>
+                            <span class="calc-val-badge" id="calcRateBadge">8.5 %</span>
+                        </div>
+                        <input type="range" id="calcRate" min="6.5" max="15.0" step="0.1" value="8.5">
+                    </div>
+
+                    <div class="calc-group">
+                        <div class="calc-label-row">
+                            <span>Loan Tenure</span>
+                            <span class="calc-val-badge" id="calcTenureBadge">20 Years</span>
+                        </div>
+                        <input type="range" id="calcTenure" min="5" max="30" step="1" value="20">
+                    </div>
+                </div>
+
+                <div class="calc-result-box">
+                    <div class="calc-result-heading">Estimated Monthly EMI</div>
+                    <div class="emi-amount" id="calcEmiResult">Rs. 86,782</div>
+                    <div class="calc-breakdown">
+                        <div>
+                            <div class="calc-sub-val" id="calcTotalInterest">Rs. 1.08 Cr</div>
+                            <div class="calc-sub-lbl">Total Interest</div>
+                        </div>
+                        <div>
+                            <div class="calc-sub-val" id="calcTotalPayment">Rs. 2.08 Cr</div>
+                            <div class="calc-sub-lbl">Total Payable</div>
+                        </div>
+                    </div>
+                    <button class="btn btn-gold btn-sm" onclick="openInquiryModal('Home Loan Financial Assistance', 'Finance Desk')">
+                        <i class="fas fa-file-invoice-dollar"></i> Apply for Pre-Approval
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Elite Agents -->
+    <section class="section-wrapper" style="background: var(--bg-surface);" id="agents">
+        <div class="section-header">
+            <span class="section-tag">Our Specialists</span>
+            <h2 class="section-title">Meet Our Premier Agents</h2>
+            <p class="section-desc">
+                Dedicated professionals with proven track records in high-value real estate acquisitions.
+            </p>
+        </div>
+
+        <div class="agents-grid">
+            <div class="agent-card">
+                <div class="agent-avatar-wrap">
+                    <img src="range.jpg" alt="Range Manideep" class="agent-avatar">
+                </div>
+                <h3 class="agent-name">Range Manideep</h3>
+                <div class="agent-role">Luxury Estate Director</div>
+                <a href="tel:+1234567890" class="agent-phone"><i class="fas fa-phone-alt text-gold"></i> +(123)-456-7890</a>
+                <div class="agent-socials">
+                    <a href="mailto:rangeagent1@gmail.com" class="agent-social-link"><i class="fas fa-envelope"></i></a>
+                    <a href="#" class="agent-social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="agent-social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+                <button class="btn btn-outline btn-sm" style="width: 100%;" onclick="openInquiryModal('Consultation Request', 'Range Manideep')">Book Consultation</button>
+            </div>
+
+            <div class="agent-card">
+                <div class="agent-avatar-wrap">
+                    <img src="teja.jpg" alt="Burra buttu Teja" class="agent-avatar">
+                </div>
+                <h3 class="agent-name">Burra buttu Teja</h3>
+                <div class="agent-role">Principal Leasing Partner</div>
+                <a href="tel:+7547646324" class="agent-phone"><i class="fas fa-phone-alt text-gold"></i> +(754)-764-6324</a>
+                <div class="agent-socials">
+                    <a href="mailto:buttuagent2@gmail.com" class="agent-social-link"><i class="fas fa-envelope"></i></a>
+                    <a href="#" class="agent-social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="agent-social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+                <button class="btn btn-outline btn-sm" style="width: 100%;" onclick="openInquiryModal('Consultation Request', 'Burra buttu Teja')">Book Consultation</button>
+            </div>
+
+            <div class="agent-card">
+                <div class="agent-avatar-wrap">
+                    <img src="1728831768886.jpg" alt="Attagadu Aakash" class="agent-avatar">
+                </div>
+                <h3 class="agent-name">Attagadu Aakash</h3>
+                <div class="agent-role">International Portfolio Lead</div>
+                <a href="tel:+6576756421" class="agent-phone"><i class="fas fa-phone-alt text-gold"></i> +(657)-675-6421</a>
+                <div class="agent-socials">
+                    <a href="mailto:attagaduagent3@gmail.com" class="agent-social-link"><i class="fas fa-envelope"></i></a>
+                    <a href="#" class="agent-social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="agent-social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+                <button class="btn btn-outline btn-sm" style="width: 100%;" onclick="openInquiryModal('Consultation Request', 'Attagadu Aakash')">Book Consultation</button>
+            </div>
+
+            <div class="agent-card">
+                <div class="agent-avatar-wrap">
+                    <img src="supremeyaskin.jpg" alt="Supreme Yaskin" class="agent-avatar">
+                </div>
+                <h3 class="agent-name">Supreme Yaskin</h3>
+                <div class="agent-role">Private Island & Waterfront Head</div>
+                <a href="tel:+6585468705" class="agent-phone"><i class="fas fa-phone-alt text-gold"></i> +(658)-546-8705</a>
+                <div class="agent-socials">
+                    <a href="mailto:supremeagent4@gmail.com" class="agent-social-link"><i class="fas fa-envelope"></i></a>
+                    <a href="#" class="agent-social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="agent-social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+                <button class="btn btn-outline btn-sm" style="width: 100%;" onclick="openInquiryModal('Consultation Request', 'Supreme Yaskin')">Book Consultation</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section-wrapper" id="reviews">
+        <div class="section-header">
+            <span class="section-tag">Client Experiences</span>
+            <h2 class="section-title">Trusted by Discerning Buyers</h2>
+            <p class="section-desc">
+                Hear from homeowners and investors who found their ideal property with RealEstate.
+            </p>
+        </div>
+
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p class="testimonial-quote">
+                    "Range Manideep helped us secure our dream penthouse in Jubilee Hills smoothly. The legal clarity, escrow process, and discretion were exceptional."
+                </p>
+                <div class="client-info">
+                    <div class="client-avatar">RK</div>
+                    <div>
+                        <div class="client-name">Rajesh Kalra</div>
+                        <div class="client-role">Tech Executive & Investor</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p class="testimonial-quote">
+                    "Renting in Banjara Hills through Burra buttu Teja was effortless. The digital agreement, inventory check, and move-in coordination were completed in under 48 hours."
+                </p>
+                <div class="client-info">
+                    <div class="client-avatar">SP</div>
+                    <div>
+                        <div class="client-name">Sneha Patel</div>
+                        <div class="client-role">Creative Director</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p class="testimonial-quote">
+                    "Supreme Yaskin provided extraordinary insights on private coastal acquisitions. His team's knowledge of maritime zones and local approvals is unmatched."
+                </p>
+                <div class="client-info">
+                    <div class="client-avatar">VC</div>
+                    <div>
+                        <div class="client-name">Vikramaditya Chowdary</div>
+                        <div class="client-role">Industrialist</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <a href="index.html" class="logo" style="margin-bottom: 16px; display: inline-flex;">
+                    <i class="fas fa-city"></i>
+                    <span class="brand-real">real</span><span class="brand-estate">Estate</span>
+                </a>
+                <p>
+                    Connecting discerning buyers and investors with extraordinary real estate opportunities across high-growth corridors and international destinations.
+                </p>
+                <div class="footer-socials">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Quick Navigation</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html"><i class="fas fa-angle-right text-gold"></i> Home</a></li>
+                    <li><a href="properties.html"><i class="fas fa-angle-right text-gold"></i> Luxury Properties</a></li>
+                    <li><a href="services.html"><i class="fas fa-angle-right text-gold"></i> Concierge Services</a></li>
+                    <li><a href="agent.html"><i class="fas fa-angle-right text-gold"></i> Advisory Agents</a></li>
+                    <li><a href="contact.html"><i class="fas fa-angle-right text-gold"></i> Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Property Categories</h3>
+                <ul class="footer-links">
+                    <li><a href="properties.html?type=apartment"><i class="fas fa-angle-right text-gold"></i> Luxury Apartments</a></li>
+                    <li><a href="properties.html?type=villa"><i class="fas fa-angle-right text-gold"></i> Modern Villas</a></li>
+                    <li><a href="properties.html?type=island"><i class="fas fa-angle-right text-gold"></i> Private Islands</a></li>
+                    <li><a href="properties.html?type=land"><i class="fas fa-angle-right text-gold"></i> Agricultural Estates</a></li>
+                    <li><a href="properties.html?status=rent"><i class="fas fa-angle-right text-gold"></i> Premium Rentals</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Private Newsletter</h3>
+                <p>Receive unlisted pocket listings, market reports, and private tour invitations.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-gold btn-sm"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div>&copy; 2026 RealEstate Inc. All Rights Reserved. Built with pride for CSE326.</div>
+            <div style="display: flex; gap: 20px;">
+                <a href="#" style="color: var(--text-dim);">Privacy Policy</a>
+                <a href="#" style="color: var(--text-dim);">Terms of Service</a>
+                <a href="#" style="color: var(--text-dim);">RERA Disclosures</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Property Details Modal -->
+    <div class="modal-backdrop" id="propertyDetailsModal">
+        <div class="modal-box">
+            <button class="modal-close-btn">&times;</button>
+            <div class="modal-content-area" id="propertyDetailsContent"></div>
+        </div>
+    </div>
+
+    <!-- Inquiry Modal -->
+    <div class="modal-backdrop" id="inquiryModal">
+        <div class="modal-box">
+            <button class="modal-close-btn">&times;</button>
+            <div class="modal-content-area">
+                <div style="text-align: center; margin-bottom: 20px;">
+                    <i class="fas fa-envelope-open-text" style="font-size: 2.2rem; color: var(--accent-gold); margin-bottom: 8px;"></i>
+                    <h2 style="font-size: 1.5rem; margin-bottom: 4px;">Request Property Information</h2>
+                    <p id="inquiryAgentNote" style="color: var(--text-muted); font-size: 0.85rem;"></p>
+                </div>
+
+                <form id="inquiryForm">
+                    <div class="form-group">
+                        <label for="inquiryPropertyTitle">Property of Interest</label>
+                        <input type="text" id="inquiryPropertyTitle" class="form-control" readonly style="background: rgba(255,255,255,0.05);">
+                    </div>
+
+                    <div class="form-grid-2">
+                        <div class="form-group">
+                            <label for="inquiryName">Your Name</label>
+                            <input type="text" id="inquiryName" class="form-control" placeholder="e.g. Rahul Sharma" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="inquiryPhone">Phone Number</label>
+                            <input type="tel" id="inquiryPhone" class="form-control" placeholder="10 digit number" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inquiryEmail">Email Address</label>
+                        <input type="email" id="inquiryEmail" class="form-control" placeholder="name@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inquiryNotes">Questions / Tour Preferences</label>
+                        <textarea id="inquiryNotes" class="form-control" rows="3" placeholder="I would like to schedule a site inspection this weekend..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-gold" style="width: 100%; padding: 14px;">
+                        <i class="fas fa-paper-plane"></i> Submit Inquiry
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Favorites Modal -->
+    <div class="modal-backdrop" id="favoritesModal">
+        <div class="modal-box">
+            <button class="modal-close-btn">&times;</button>
+            <div class="modal-content-area">
+                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 20px;">
+                    <i class="fas fa-heart" style="color: var(--accent-rose); font-size: 1.5rem;"></i>
+                    <h2 style="font-size: 1.4rem;">Saved Properties Wishlist</h2>
+                </div>
+                <div id="favoritesModalList"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Core Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

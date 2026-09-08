@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | RealEstate Luxury Living</title>
+    <meta name="description" content="Reach out to RealEstate headquarters for private property tours, listings, and investment advisory.">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <a href="index.html" class="logo">
+            <i class="fas fa-city"></i>
+            <span class="brand-real">real</span><span class="brand-estate">Estate</span>
+        </a>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="properties.html">Properties</a>
+            <a href="services.html">Services</a>
+            <a href="agent.html">Agents</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+            <a href="#" class="nav-icon-btn" id="fav-btn" title="Saved Properties">
+                <i class="fas fa-heart"></i>
+                <span class="badge-counter" id="fav-count">0</span>
+            </a>
+            <a href="login2.html" class="user-badge" id="user-account-btn">
+                <i class="fas fa-user"></i>
+                <span>Sign In</span>
+            </a>
+            <div id="menu-bars" class="fas fa-bars nav-icon-btn" title="Toggle Menu"></div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section style="padding: 130px 6% 40px; background: linear-gradient(180deg, rgba(9, 13, 22, 0.8) 0%, var(--bg-dark) 100%), url('homebackground.jpg') center/cover no-repeat; text-align: center;">
+        <span class="section-tag">Get in Touch</span>
+        <h1 style="font-size: clamp(2.2rem, 4vw, 3.2rem); margin-bottom: 12px;">Contact Our Prime Advisory Desk</h1>
+        <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto;">
+            Connect directly with our corporate headquarters or schedule a private confidential briefing with an executive broker.
+        </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section-wrapper" style="padding-top: 20px;">
+        <div class="contact-container">
+            <!-- Contact Form Card -->
+            <div class="contact-form-card">
+                <h3 style="font-size: 1.6rem; margin-bottom: 8px;">Send a Direct Message</h3>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 24px;">Our advisors reply within 2 business hours.</p>
+
+                <form id="contactUsForm">
+                    <div class="form-grid-2">
+                        <div class="form-group">
+                            <label for="contactName">Full Name</label>
+                            <input type="text" id="contactName" class="form-control" placeholder="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactPhone">Phone Number</label>
+                            <input type="tel" id="contactPhone" class="form-control" placeholder="number" required>
+                        </div>
+                    </div>
+
+                    <div class="form-grid-2">
+                        <div class="form-group">
+                            <label for="contactEmail">Email Address</label>
+                            <input type="email" id="contactEmail" class="form-control" placeholder="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactSubject">Subject / Interest</label>
+                            <input type="text" id="contactSubject" class="form-control" placeholder="subject" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactMessage">Your Message</label>
+                        <textarea id="contactMessage" class="form-control" placeholder="message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-gold" style="width: 100%; padding: 14px;">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+
+            <!-- Office Information & Map -->
+            <div class="contact-info-panel">
+                <div class="info-cards-list">
+                    <div class="info-card">
+                        <div class="info-card-icon"><i class="fas fa-map-marked-alt"></i></div>
+                        <div class="info-card-text">
+                            <h4>Corporate Headquarters</h4>
+                            <p>Marugu Complex, 10th Floor, KPHB Colony, Pillar No: 47, Hyderabad, Telangana, India - 500072</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-card-icon"><i class="fas fa-phone-volume"></i></div>
+                        <div class="info-card-text">
+                            <h4>Direct Phone Lines</h4>
+                            <p><a href="tel:+1234567890">+(123)-456-7890</a> &nbsp;|&nbsp; <a href="tel:+7547646324">+(754)-764-6324</a></p>
+                            <p><a href="tel:+6576756421">+(657)-675-6421</a> &nbsp;|&nbsp; <a href="tel:+6585468705">+(658)-546-8705</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-card-icon"><i class="fas fa-envelope-open-text"></i></div>
+                        <div class="info-card-text">
+                            <h4>Dedicated Inquiries</h4>
+                            <p><a href="mailto:contact@realestate.com">contact@realestate.com</a></p>
+                            <p><a href="mailto:advisory@realestate.com">advisory@realestate.com</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Google Map Box -->
+                <div class="map-box">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d30443.899783238074!2d78.37001642516844!3d17.484228372081862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1728840174632!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Accordion -->
+    <section class="section-wrapper" style="background: var(--bg-surface); padding-top: 60px;">
+        <div class="section-header">
+            <span class="section-tag">Help & Clarity</span>
+            <h2 class="section-title">Frequently Asked Questions</h2>
+        </div>
+
+        <div style="max-width: 900px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px;">
+            <div style="background: var(--bg-card); border: 1px solid var(--border-light); border-radius: 12px; padding: 24px;">
+                <h4 style="font-size: 1.1rem; margin-bottom: 8px; color: var(--accent-gold);">Are all property titles verified before listing?</h4>
+                <p style="color: var(--text-muted); font-size: 0.95rem;">Yes. Every single property listed under our portfolio undergoes strict 30-year encumbrance reviews, municipal clearance checks, and RERA registration compliance before public showcase.</p>
+            </div>
+
+            <div style="background: var(--bg-card); border: 1px solid var(--border-light); border-radius: 12px; padding: 24px;">
+                <h4 style="font-size: 1.1rem; margin-bottom: 8px; color: var(--accent-gold);">Can international buyers or NRIs purchase properties?</h4>
+                <p style="color: var(--text-muted); font-size: 0.95rem;">Certainly. We have dedicated FEMA legal desks assisting NRIs and foreign nationals with inward remittances, NRE/NRO banking procedures, and power-of-attorney execution.</p>
+            </div>
+
+            <div style="background: var(--bg-card); border: 1px solid var(--border-light); border-radius: 12px; padding: 24px;">
+                <h4 style="font-size: 1.1rem; margin-bottom: 8px; color: var(--accent-gold);">How do I arrange a private site tour?</h4>
+                <p style="color: var(--text-muted); font-size: 0.95rem;">Simply click "Inquire" on any property card, or contact the designated listing agent directly. Our team provides escorted chauffeured previews at your convenience.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <a href="index.html" class="logo" style="margin-bottom: 16px; display: inline-flex;">
+                    <i class="fas fa-city"></i>
+                    <span class="brand-real">real</span><span class="brand-estate">Estate</span>
+                </a>
+                <p>
+                    Connecting discerning buyers and investors with extraordinary real estate opportunities across high-growth corridors and international destinations.
+                </p>
+                <div class="footer-socials">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Quick Navigation</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html"><i class="fas fa-angle-right text-gold"></i> Home</a></li>
+                    <li><a href="properties.html"><i class="fas fa-angle-right text-gold"></i> Luxury Properties</a></li>
+                    <li><a href="services.html"><i class="fas fa-angle-right text-gold"></i> Concierge Services</a></li>
+                    <li><a href="agent.html"><i class="fas fa-angle-right text-gold"></i> Advisory Agents</a></li>
+                    <li><a href="contact.html"><i class="fas fa-angle-right text-gold"></i> Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Property Categories</h3>
+                <ul class="footer-links">
+                    <li><a href="properties.html?type=apartment"><i class="fas fa-angle-right text-gold"></i> Luxury Apartments</a></li>
+                    <li><a href="properties.html?type=villa"><i class="fas fa-angle-right text-gold"></i> Modern Villas</a></li>
+                    <li><a href="properties.html?type=island"><i class="fas fa-angle-right text-gold"></i> Private Islands</a></li>
+                    <li><a href="properties.html?type=land"><i class="fas fa-angle-right text-gold"></i> Agricultural Estates</a></li>
+                    <li><a href="properties.html?status=rent"><i class="fas fa-angle-right text-gold"></i> Premium Rentals</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Private Newsletter</h3>
+                <p>Receive unlisted pocket listings, market reports, and private tour invitations.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-gold btn-sm"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div>&copy; 2026 RealEstate Inc. All Rights Reserved. Built with pride for CSE326.</div>
+            <div style="display: flex; gap: 20px;">
+                <a href="#" style="color: var(--text-dim);">Privacy Policy</a>
+                <a href="#" style="color: var(--text-dim);">Terms of Service</a>
+                <a href="#" style="color: var(--text-dim);">RERA Disclosures</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Favorites Modal -->
+    <div class="modal-backdrop" id="favoritesModal">
+        <div class="modal-box">
+            <button class="modal-close-btn">&times;</button>
+            <div class="modal-content-area">
+                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 20px;">
+                    <i class="fas fa-heart" style="color: var(--accent-rose); font-size: 1.5rem;"></i>
+                    <h2 style="font-size: 1.4rem;">Saved Properties Wishlist</h2>
+                </div>
+                <div id="favoritesModalList"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

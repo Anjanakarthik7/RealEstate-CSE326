@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Agents | RealEstate Luxury Living</title>
+    <meta name="description" content="Connect with our licensed luxury real estate advisors and property specialists.">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <a href="index.html" class="logo">
+            <i class="fas fa-city"></i>
+            <span class="brand-real">real</span><span class="brand-estate">Estate</span>
+        </a>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="properties.html">Properties</a>
+            <a href="services.html">Services</a>
+            <a href="agent.html" class="active">Agents</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+            <a href="#" class="nav-icon-btn" id="fav-btn" title="Saved Properties">
+                <i class="fas fa-heart"></i>
+                <span class="badge-counter" id="fav-count">0</span>
+            </a>
+            <a href="login2.html" class="user-badge" id="user-account-btn">
+                <i class="fas fa-user"></i>
+                <span>Sign In</span>
+            </a>
+            <div id="menu-bars" class="fas fa-bars nav-icon-btn" title="Toggle Menu"></div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section style="padding: 130px 6% 40px; background: linear-gradient(180deg, rgba(9, 13, 22, 0.8) 0%, var(--bg-dark) 100%), url('homebackground.jpg') center/cover no-repeat; text-align: center;">
+        <span class="section-tag">Market Leaders</span>
+        <h1 style="font-size: clamp(2.2rem, 4vw, 3.2rem); margin-bottom: 12px;">Our Certified Luxury Advisors</h1>
+        <p style="color: var(--text-muted); max-width: 620px; margin: 0 auto;">
+            Work with accredited specialists known for discretion, deep micro-market intelligence, and high-value transactional prowess.
+        </p>
+    </section>
+
+    <!-- Agents Grid -->
+    <section class="section-wrapper" style="padding-top: 20px;">
+        <div class="agents-grid">
+            <!-- Agent 1 -->
+            <div class="agent-card">
+                <div class="agent-avatar-wrap">
+                    <img src="range.jpg" alt="Range Manideep" class="agent-avatar">
+                </div>
+                <h3 class="agent-name">Range Manideep</h3>
+                <div class="agent-role">Director & Luxury Specialist</div>
+                <a href="tel:+1234567890" class="agent-phone"><i class="fas fa-phone-alt text-gold"></i> +(123)-456-7890</a>
+                
+                <div style="display: flex; justify-content: space-around; background: rgba(9, 13, 22, 0.6); border-radius: 8px; padding: 12px; margin-bottom: 18px; font-size: 0.82rem;">
+                    <div>
+                        <strong style="display: block; color: var(--accent-gold); font-size: 1rem;">12+ Yrs</strong>
+                        <span style="color: var(--text-dim);">Experience</span>
+                    </div>
+                    <div>
+                        <strong style="display: block; color: #fff; font-size: 1rem;">₹450 Cr+</strong>
+                        <span style="color: var(--text-dim);">Closed Deals</span>
+                    </div>
+                    <div>
+                        <strong style="display: block; color: var(--accent-emerald); font-size: 1rem;">4.9 ★</strong>
+                        <span style="color: var(--text-dim);">Rating</span>
+                    </div>
+                </div>
+
+                <div class="agent-socials">
+                    <a href="mailto:rangeagent1@gmail.com" class="agent-social-link" title="Send Email"><i class="fas fa-envelope"></i></a>
+                    <a href="#" class="agent-social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="agent-social-link" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="agent-social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+                <button class="btn btn-gold btn-sm" style="width: 100%;" onclick="openInquiryModal('Consultation Request with Range Manideep', 'Range Manideep')">
+                    Book Private Consultation
+                </button>
+            </div>
+
+            <!-- Agent 2 -->
+            <div class="agent-card">
+                <div class="agent-avatar-wrap">
+                    <img src="teja.jpg" alt="Burra buttu Teja" class="agent-avatar">
+                </div>
+                <h3 class="agent-name">Burra buttu Teja</h3>
+                <div class="agent-role">Principal Leasing Partner</div>
+                <a href="tel:+7547646324" class="agent-phone"><i class="fas fa-phone-alt text-gold"></i> +(754)-764-6324</a>
+
+                <div style="display: flex; justify-content: space-around; background: rgba(9, 13, 22, 0.6); border-radius: 8px; padding: 12px; margin-bottom: 18px; font-size: 0.82rem;">
+                    <div>
+                        <strong style="display: block; color: var(--accent-gold); font-size: 1rem;">9+ Yrs</strong>
+                        <span style="color: var(--text-dim);">Experience</span>
+                    </div>
+                    <div>
+                        <strong style="display: block; color: #fff; font-size: 1rem;">₹280 Cr+</strong>
+                        <span style="color: var(--text-dim);">Closed Deals</span>
+                    </div>
+                    <div>
+                        <strong style="display: block; color: var(--accent-emerald); font-size: 1rem;">4.8 ★</strong>
+                        <span style="color: var(--text-dim);">Rating</span>
+                    </div>
+                </div>
+
+                <div class="agent-socials">
+                    <a href="mailto:buttuagent2@gmail.com" class="agent-social-link" title="Send Email"><i class="fas fa-envelope"></i></a>
+                    <a href="#" class="agent-social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="agent-social-link" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="agent-social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+                <button class="btn btn-gold btn-sm" style="width: 100%;" onclick="openInquiryModal('Consultation Request with Burra buttu Teja', 'Burra buttu Teja')">
+                    Book Private Consultation
+                </button>
+            </div>
+
+            <!-- Agent 3 -->
+            <div class="agent-card">
+                <div class="agent-avatar-wrap">
+                    <img src="1728831768886.jpg" alt="Attagadu Aakash" class="agent-avatar">
+                </div>
+                <h3 class="agent-name">Attagadu Aakash</h3>
+                <div class="agent-role">International Portfolio Lead</div>
+                <a href="tel:+6576756421" class="agent-phone"><i class="fas fa-phone-alt text-gold"></i> +(657)-675-6421</a>
+
+                <div style="display: flex; justify-content: space-around; background: rgba(9, 13, 22, 0.6); border-radius: 8px; padding: 12px; margin-bottom: 18px; font-size: 0.82rem;">
+                    <div>
+                        <strong style="display: block; color: var(--accent-gold); font-size: 1rem;">8+ Yrs</strong>
+                        <span style="color: var(--text-dim);">Experience</span>
+                    </div>
+                    <div>
+                        <strong style="display: block; color: #fff; font-size: 1rem;">₹390 Cr+</strong>
+                        <span style="color: var(--text-dim);">Closed Deals</span>
+                    </div>
+                    <div>
+                        <strong style="display: block; color: var(--accent-emerald); font-size: 1rem;">4.9 ★</strong>
+                        <span style="color: var(--text-dim);">Rating</span>
+                    </div>
+                </div>
+
+                <div class="agent-socials">
+                    <a href="mailto:attagaduagent3@gmail.com" class="agent-social-link" title="Send Email"><i class="fas fa-envelope"></i></a>
+                    <a href="#" class="agent-social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="agent-social-link" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="agent-social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+                <button class="btn btn-gold btn-sm" style="width: 100%;" onclick="openInquiryModal('Consultation Request with Attagadu Aakash', 'Attagadu Aakash')">
+                    Book Private Consultation
+                </button>
+            </div>
+
+            <!-- Agent 4 -->
+            <div class="agent-card">
+                <div class="agent-avatar-wrap">
+                    <img src="supremeyaskin.jpg" alt="Supreme Yaskin" class="agent-avatar">
+                </div>
+                <h3 class="agent-name">Supreme Yaskin</h3>
+                <div class="agent-role">Island & Waterfront Partner</div>
+                <a href="tel:+6585468705" class="agent-phone"><i class="fas fa-phone-alt text-gold"></i> +(658)-546-8705</a>
+
+                <div style="display: flex; justify-content: space-around; background: rgba(9, 13, 22, 0.6); border-radius: 8px; padding: 12px; margin-bottom: 18px; font-size: 0.82rem;">
+                    <div>
+                        <strong style="display: block; color: var(--accent-gold); font-size: 1rem;">15+ Yrs</strong>
+                        <span style="color: var(--text-dim);">Experience</span>
+                    </div>
+                    <div>
+                        <strong style="display: block; color: #fff; font-size: 1rem;">₹720 Cr+</strong>
+                        <span style="color: var(--text-dim);">Closed Deals</span>
+                    </div>
+                    <div>
+                        <strong style="display: block; color: var(--accent-emerald); font-size: 1rem;">5.0 ★</strong>
+                        <span style="color: var(--text-dim);">Rating</span>
+                    </div>
+                </div>
+
+                <div class="agent-socials">
+                    <a href="mailto:supremeagent4@gmail.com" class="agent-social-link" title="Send Email"><i class="fas fa-envelope"></i></a>
+                    <a href="#" class="agent-social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="agent-social-link" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="agent-social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+                <button class="btn btn-gold btn-sm" style="width: 100%;" onclick="openInquiryModal('Consultation Request with Supreme Yaskin', 'Supreme Yaskin')">
+                    Book Private Consultation
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <a href="index.html" class="logo" style="margin-bottom: 16px; display: inline-flex;">
+                    <i class="fas fa-city"></i>
+                    <span class="brand-real">real</span><span class="brand-estate">Estate</span>
+                </a>
+                <p>
+                    Connecting discerning buyers and investors with extraordinary real estate opportunities across high-growth corridors and international destinations.
+                </p>
+                <div class="footer-socials">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Quick Navigation</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html"><i class="fas fa-angle-right text-gold"></i> Home</a></li>
+                    <li><a href="properties.html"><i class="fas fa-angle-right text-gold"></i> Luxury Properties</a></li>
+                    <li><a href="services.html"><i class="fas fa-angle-right text-gold"></i> Concierge Services</a></li>
+                    <li><a href="agent.html"><i class="fas fa-angle-right text-gold"></i> Advisory Agents</a></li>
+                    <li><a href="contact.html"><i class="fas fa-angle-right text-gold"></i> Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Property Categories</h3>
+                <ul class="footer-links">
+                    <li><a href="properties.html?type=apartment"><i class="fas fa-angle-right text-gold"></i> Luxury Apartments</a></li>
+                    <li><a href="properties.html?type=villa"><i class="fas fa-angle-right text-gold"></i> Modern Villas</a></li>
+                    <li><a href="properties.html?type=island"><i class="fas fa-angle-right text-gold"></i> Private Islands</a></li>
+                    <li><a href="properties.html?type=land"><i class="fas fa-angle-right text-gold"></i> Agricultural Estates</a></li>
+                    <li><a href="properties.html?status=rent"><i class="fas fa-angle-right text-gold"></i> Premium Rentals</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Private Newsletter</h3>
+                <p>Receive unlisted pocket listings, market reports, and private tour invitations.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-gold btn-sm"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div>&copy; 2026 RealEstate Inc. All Rights Reserved. Built with pride for CSE326.</div>
+            <div style="display: flex; gap: 20px;">
+                <a href="#" style="color: var(--text-dim);">Privacy Policy</a>
+                <a href="#" style="color: var(--text-dim);">Terms of Service</a>
+                <a href="#" style="color: var(--text-dim);">RERA Disclosures</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div class="modal-backdrop" id="inquiryModal">
+        <div class="modal-box">
+            <button class="modal-close-btn">&times;</button>
+            <div class="modal-content-area">
+                <div style="text-align: center; margin-bottom: 20px;">
+                    <i class="fas fa-user-tie" style="font-size: 2.2rem; color: var(--accent-gold); margin-bottom: 8px;"></i>
+                    <h2 style="font-size: 1.5rem; margin-bottom: 4px;">Schedule Agent Consultation</h2>
+                    <p id="inquiryAgentNote" style="color: var(--text-muted); font-size: 0.85rem;"></p>
+                </div>
+
+                <form id="inquiryForm">
+                    <div class="form-group">
+                        <label for="inquiryPropertyTitle">Meeting Subject</label>
+                        <input type="text" id="inquiryPropertyTitle" class="form-control" readonly style="background: rgba(255,255,255,0.05);">
+                    </div>
+
+                    <div class="form-grid-2">
+                        <div class="form-group">
+                            <label for="inquiryName">Your Name</label>
+                            <input type="text" id="inquiryName" class="form-control" placeholder="e.g. Rahul Sharma" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="inquiryPhone">Phone Number</label>
+                            <input type="tel" id="inquiryPhone" class="form-control" placeholder="10 digit number" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inquiryEmail">Email Address</label>
+                        <input type="email" id="inquiryEmail" class="form-control" placeholder="name@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inquiryNotes">Meeting Agenda / Timing</label>
+                        <textarea id="inquiryNotes" class="form-control" rows="3" placeholder="I would like to discuss acquisition opportunities..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-gold" style="width: 100%; padding: 14px;">
+                        <i class="fas fa-calendar-check"></i> Confirm Appointment
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-backdrop" id="favoritesModal">
+        <div class="modal-box">
+            <button class="modal-close-btn">&times;</button>
+            <div class="modal-content-area">
+                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 20px;">
+                    <i class="fas fa-heart" style="color: var(--accent-rose); font-size: 1.5rem;"></i>
+                    <h2 style="font-size: 1.4rem;">Saved Properties Wishlist</h2>
+                </div>
+                <div id="favoritesModalList"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
